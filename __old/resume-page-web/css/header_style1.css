@@ -8,7 +8,7 @@
 	text-align: center;
 }
 .logo h1 a{
-	color:#012;
+	color:#0d2e50;
 	font-size: 3em;
 	font-weight: 600;
 }
@@ -37,7 +37,7 @@
 }
 .flexy-menu>li>a{
 	display: block;
-	color: #000;
+	color: #0d2e50;
 	padding: 12px 30px 12px 30px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -55,6 +55,7 @@
 .flexy-menu>li>a:hover
 {
 	color:#55C1E5;
+    background-color: #fff;
 }
 
 .flexy-menu li.right{

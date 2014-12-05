@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Starting to Blog
-published: false
+published: true
 ---
 
 ### Why start now?

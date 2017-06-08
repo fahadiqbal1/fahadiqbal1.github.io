@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% if page.image %}
+  <img src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.image_credit }}" width="100%" class="post-image">
+{% endif %}
+
+<article class="post {% if page.image %}post-with-image{% endif %}">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

@@ -1,6 +1,7 @@
 ---
 ---
 @import 'base';
-@import "{{ site.baseurl }}/node_modules/picnic/picnic.min.css";
+// @import "{{ site.baseurl }}/node_modules/picnic/picnic.min.css";
+@import 'picnic.min.css';
 
 @import 'highlight';

@@ -1,7 +1,7 @@
 ---
 ---
-@import 'base';
 // @import "{{ site.baseurl }}/node_modules/picnic/picnic.min.css";
+@import 'base';
 @import 'picnic.min.css';
-
+@import './../fontello/fontello-embedded.css';
 @import 'highlight';

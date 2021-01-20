@@ -1,7 +1,12 @@
 <footer class="footer">
     <div class="content has-text-left has-text-weight-light">
+        {{ $npm := getJSON "package.json" }}
         <p>
-            {{ .Site.Copyright }}
+            {{ .Site.Copyright }}.
+            <br>
+            Powered by <a href="https://gohugo.io/">Hugo</a> {{.Hugo.Version}} &
+            <a href="https://bulma.io/">Bulma</a>
+            {{ $npm.dependencies.bulma }}
         </p>
     </div>
 </footer>

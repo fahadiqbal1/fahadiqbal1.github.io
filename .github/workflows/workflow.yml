@@ -43,7 +43,7 @@ jobs:
       - run: npm ci
       - run: hugo --minify
 
-      - name: Deploy
+      - name: GH-Pages Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -52,13 +52,16 @@ jobs:
       - name: Build for main website
         run: hugo --minify --baseURL https://fahadiqbal.com/
 
-      - name: 📂 Sync files
+      - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          protocol: ftps
+          protocol: ftps-legacy
+          port: 22 
           dry-run: true
           local-dir: ./public/
           server-dir: ./fahadiqbal.com/
+          security: strict
+        

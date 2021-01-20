@@ -53,15 +53,13 @@ jobs:
         run: hugo --minify --baseURL https://fahadiqbal.com/
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: wangyucode/sftp-upload-action@v1.1
         with:
-          server: ${{ secrets.SFTP_HOST }}
+          host: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          protocol: ftp
           port: 22 
-          dry-run: true
-          local-dir: ./public/
-          server-dir: ./fahadiqbal.com/
-          security: strict
+          dryRun: true
+          localDir: 'public'
+          remoteDir: './fahadiqbal.com/'
         

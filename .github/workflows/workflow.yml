@@ -6,8 +6,8 @@ on:
       - master
 
 jobs:
-  setup:
-    name: Setup Workflow
+  deploy:
+    name: Build and Deploy Blog
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2

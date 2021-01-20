@@ -50,7 +50,7 @@ jobs:
           publish_dir: ./public
       
       - name: Build for main website
-        run: hugo --minify --baseURL https://fahadiqbal.com/
+        run: hugo --minify --baseURL https://www.fahadiqbal.com/
 
       - name: FTP Deploy
         uses: wangyucode/sftp-upload-action@v1.1

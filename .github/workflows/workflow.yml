@@ -61,5 +61,5 @@ jobs:
           protocol: ftps
           port: 22
           dry-run: true
-          local-dir: ./public
-          server-dir: ./fahadiqbal.com
+          local-dir: ./public/
+          server-dir: ./fahadiqbal.com/

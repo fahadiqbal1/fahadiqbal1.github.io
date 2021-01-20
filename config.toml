@@ -1,7 +1,7 @@
 title = "Fahad Iqbal"
 baseURL = "https://fahadiqbal.com/"
 languageCode = "en-us"
-copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+copyright = "© Fahad Iqbal 2021"
 sectionPagesMenu = "main"
 enableRobotsTXT= true
 enableGitInfo = true
@@ -12,3 +12,8 @@ enableGitInfo = true
 [params]
     description = "Personal Site of Fahad Iqbal"
     subtitle = "The thoughts and ramblings of an internet stranger"
+
+[sitemap]
+    ChangeFreq = ""
+    Filename = "sitemap.xml"
+    Priority = "-1"

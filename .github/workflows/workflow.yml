@@ -1,4 +1,4 @@
-name: deploy blog
+name: Deploy Blog
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
       - master
 
 jobs:
-  deploy:
+  setup:
+    name: Setup Workflow
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -38,8 +39,14 @@ jobs:
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-hugomod-
-
+      
       - run: npm ci
+
+  github:
+    name: Build & Deploy for Github
+    runs-on: ubuntu-20.04
+    needs: setup
+    steps:
       - run: hugo --minify
 
       - name: Deploy

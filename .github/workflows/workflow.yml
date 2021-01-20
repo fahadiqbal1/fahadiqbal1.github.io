@@ -48,3 +48,18 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+      
+      - name: Build for main website
+        run: hugo --minify --baseURL https://fahadiqbal.com/
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USER }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          protocol: ftps
+          port: 22
+          dry-run: true
+          local-dir: ./public
+          server-dir: ./fahadiqbal.com

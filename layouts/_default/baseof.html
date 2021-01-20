@@ -8,6 +8,7 @@
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+    <meta name="description" content="{{.Description | default .Site.Params.Description}}">
     {{ range .AlternativeOutputFormats -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
@@ -18,12 +19,12 @@
 </head>
 <body data-type='{{ block "type" .}}base{{ end }}'>
     {{ partial "nav.html" . }}
-    <main aria-role="main" class="container">
+    <main role="main" class="container">
         {{ block "main" .}}{{ end }}
     </main>
     {{ partial "footer.html" . }}
     {{ $mainJs := resources.Get "js/main.js" | js.Build "main.js" | minify | fingerprint }}
-    <script type="text/javascript" src="{{ $mainJs.Permalink }}" integrity="{{ $mainJs.Data.Integrity }}"></script>
+    <script type="text/javascript" src="{{ $mainJs.Permalink }}" integrity="{{ $mainJs.Data.Integrity }}" crossorigin="anonymous"></script>
     {{ partial "analytics_gc.html" . }}
 </body>
 </html>

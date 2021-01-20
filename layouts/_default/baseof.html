@@ -24,5 +24,6 @@
     {{ partial "footer.html" . }}
     {{ $mainJs := resources.Get "js/main.js" | js.Build "main.js" | minify | fingerprint }}
     <script type="text/javascript" src="{{ $mainJs.Permalink }}" integrity="{{ $mainJs.Data.Integrity }}"></script>
+    {{ partial "analytics_gc.html" . }}
 </body>
 </html>

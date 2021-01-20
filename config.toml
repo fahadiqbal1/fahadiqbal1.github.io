@@ -1,0 +1,14 @@
+title = "Fahad Iqbal"
+baseURL = "https://fahadiqbal.com/"
+languageCode = "en-us"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+sectionPagesMenu = "main"
+enableRobotsTXT= true
+# enableGitInfo = true
+
+[author]
+    name = "Fahad Iqbal"
+
+[params]
+    description = "Personal Site of Fahad Iqbal"
+    subtitle = "The thoughts and ramblings of an internet stranger"

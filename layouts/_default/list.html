@@ -1,0 +1,36 @@
+{{ define "type" }}list{{ end }}
+
+{{ define "title" }}
+    {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+<section class="hero is-small is-light is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                {{.Title}}
+            </h1>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    {{ range .Pages.GroupByDate "2006" }}
+    <h3 class="title is-4">{{ .Key }}</h3>
+        <div class="content">
+            <ul>
+                {{ range .Pages.ByPublishDate.Reverse }}
+                <li>
+                    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    {{ end }}
+</section>
+
+<section class="section"></section>
+
+{{ end }}

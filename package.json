@@ -1,0 +1,14 @@
+{
+  "name": "fahad-i-blog",
+  "version": "0.0.1",
+  "description": "The personal blog of Fahad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fahad Iqbal",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.1"
+  }
+}

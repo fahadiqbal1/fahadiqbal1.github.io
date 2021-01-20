@@ -1,0 +1,47 @@
+{{ define "type" }}page-now{{ end }}
+
+{{ define "main" }}
+<section class="hero is-small is-light is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                {{.Title}}
+            </h1>
+            <h3 class="subtitle">
+                {{.Params.Subtitle}}
+            </h3>
+        </div>
+    </div>
+</section>
+<article class="content pt-6 px-6">
+    {{ .Content }}
+    <hr class="hr">
+    <h3>Places I have lived</h3>
+    <ul>
+        {{ range $.Site.Data.personal.lived }}
+        <li>{{.city}}{{if .state}}, {{.state}}{{end}}, {{.country}}</li>
+        {{ end }}
+    </ul>
+    <hr class="hr">
+    <h3>My Languages</h3>
+    <ul>
+        {{ range $.Site.Data.personal.languages.human }}
+        <li>{{.}}</li>
+        {{ end }}
+    </ul>
+    <hr class="hr">
+    <h3>My Languages</h3>
+    <ul>
+        {{ range $.Site.Data.personal.languages.programming }}
+        <li>{{.name}}</li>
+        {{ end }}
+    </ul>
+</article>
+<hr class="hr">
+<aside class="level">
+    <div class="level-left"></div>
+    <div class="level-right">
+        <span class="has-text-weight-light is-size-7">Last Modified: {{ .Lastmod.Format "2 Jan 2006" }}</span>
+    </div>
+</aside>
+{{ end }}

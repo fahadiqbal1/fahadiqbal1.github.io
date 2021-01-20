@@ -59,7 +59,6 @@ jobs:
           username: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PASSWORD }}
           protocol: ftps
-          port: 22
           dry-run: true
           local-dir: ./public/
           server-dir: ./fahadiqbal.com/

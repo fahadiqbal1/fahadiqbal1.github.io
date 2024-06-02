@@ -1,5 +1,26 @@
 ---
-title: "About"
+title: 'About'
+date: 2024-01-01T00:00:00-00:00
 ---
 
-Hello and welcome to my little corner of the internet! My name, as you can probably guess, is Fahad and I am a Pakistani-American who works in FinTech out of Denver, Colorado. I absolutely love solving problems using unique and creative solutions and I greatly enjoy learning new things and new ways of doing things. Over the years, I have also been fortunate enough to live and work all over the globe and have had the opportunity to travel the world and experience a whole host of different cultures and cuisines. To see what I am up to, please visit my [now](/now) page, which I keep up to date pretty frequently.
+# Who am I?
+
+Hello friends 👋🏽
+
+My name is Fahad and it is true: I am a nerd! I love what we can do with computers and in my free time I like coding or building IoT (internet of things) projects. I was born in 🇵🇰 but I have lived in 🇸🇦, 🇬🇧, 🇭🇰, 🇺🇸. I have love of ☕️ chai and 🥛 falooda and I absolutely love traveling and learning history.
+
+### Log of where I have been
+
+🇵🇰🇮🇳🇸🇦🇦🇪🇧🇭🇹🇷🇺🇸🇬🇧🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁳󠁣󠁴󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿🇮🇪🇫🇷🇮🇹🇪🇸🇵🇹🇩🇪🇧🇪🇩🇰🇳🇱🇸🇪🇳🇴🇮🇸🇭🇺🇭🇷🇦🇹🇦🇺🇦🇿🇸🇬🇲🇾🇨🇳🇲🇴🇧🇸🇧🇦🇿🇦🇲🇦
+
+### Log of where I have lived
+
+🇵🇰 - Karachi
+
+🇸🇦 - Yanbu
+
+🇺🇸 - Denver, Houston, Washington DC
+
+🇬🇧 - London
+
+🇭🇰 - Hong Kong

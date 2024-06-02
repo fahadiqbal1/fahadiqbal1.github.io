@@ -1,6 +1,0 @@
-baseURL = 'https://fahadiqbal.com/'
-languageCode = 'en-us'
-title = "Fahad Iqbal"
-theme = 'ananke'
-
-SectionPagesMenu = "main"

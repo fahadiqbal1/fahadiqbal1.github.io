@@ -1,0 +1,14 @@
+baseURL: https://fahadiqbal.com/
+languageCode: en-us
+theme: ananke
+
+title: Fahad Iqbal
+SectionPagesMenu: main
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  minifyOutput: true

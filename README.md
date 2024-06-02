@@ -1,0 +1,1 @@
+[![GH Pages](https://github.com/fahadiqbal1/fahadiqbal1.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/fahadiqbal1/fahadiqbal1.github.io/actions/workflows/hugo.yaml)
